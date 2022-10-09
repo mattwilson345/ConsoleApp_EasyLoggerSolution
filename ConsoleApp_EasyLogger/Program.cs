@@ -15,7 +15,7 @@ namespace ConsoleApp_EasyLogger
             logger = new Logger(path, "LogFolder", "LogFile.txt", 5000, 4, true);
 
             // If you are just logging to a txt file and want the standard header and
-            // are not making CSV recordings, just pass null to CSVheader.
+            // are not making CSV recordings, do not pass anything like example above.
             string CSVheader = "Interaction, Delay, Temperature, Date and Time";
             recorder = new Logger(path, "RecordingFolder", "Recording.csv", 5000, 4, true, CSVheader, true);
 
